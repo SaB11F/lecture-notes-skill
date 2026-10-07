@@ -1,0 +1,7 @@
+{
+  "name": "lecture-notes-skill",
+  "owner": { "name": "Rene Kolednik" },
+  "plugins": [
+    { "name": "lecture-notes", "source": "./", "description": "Lecture slides → print-ready study workbook (notes + diagrams + solved exercises)." }
+  ]
+}

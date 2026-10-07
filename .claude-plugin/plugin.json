@@ -1,0 +1,8 @@
+{
+  "name": "lecture-notes",
+  "version": "0.1.0",
+  "description": "Turn lecture slides (PDF) into a print-ready, designed study workbook: explained notes, exact definitions, diagrams, every exercise with workspace and solution.",
+  "author": { "name": "Rene Kolednik" },
+  "license": "MIT",
+  "keywords": ["education", "study", "notes", "lecture", "pdf", "students"]
+}
