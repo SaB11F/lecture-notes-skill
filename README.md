@@ -4,6 +4,8 @@ A Claude skill that turns one lecture's slides (PDF) into a designed, printable 
 explained notes, the lecturer's definitions verbatim, diagrams where the concept has structure,
 and **every exercise from the slides with a workspace to solve it and a worked solution underneath**.
 
+**[⬇ Download lecture-notes.skill](https://github.com/SaB11F/lecture-notes-skill/releases/latest/download/lecture-notes.skill)** — then see [Install](#install).
+
 ![preview](docs/preview.png)
 
 Real example: 176 Beamer slides (Matematika 1 — Logika in množice) → 33 A4 pages, 11 sections,
@@ -27,6 +29,14 @@ structure and a fixed design, so a course's notes look like one book when printe
 
 ## Install
 
+**Claude.ai / Claude desktop**
+
+1. Download [`lecture-notes.skill`](https://github.com/SaB11F/lecture-notes-skill/releases/latest/download/lecture-notes.skill)
+2. Claude desktop → Settings → Skills → Upload skill → pick the file
+3. New chat → attach a lecture PDF → ask for notes
+
+Pasting this repo link into Claude does not install it — upload the file. Don't use GitHub's *Code → Download ZIP* either; claude.ai rejects it. Code execution must be enabled; the scripts run in Claude's sandbox.
+
 **Claude Code**
 
 ```
@@ -35,8 +45,6 @@ structure and a fixed design, so a course's notes look like one book when printe
 ```
 
 or copy `skills/lecture-notes/` to `~/.claude/skills/lecture-notes/`.
-
-**Claude.ai / Claude desktop (Cowork)** — download `lecture-notes.skill` from [the latest release](https://github.com/SaB11F/lecture-notes-skill/releases/latest/download/lecture-notes.skill) (not GitHub's *Code → Download ZIP*, which claude.ai rejects) and use *Save skill*, or paste `SKILL.md` into Settings → Skills. The scripts run in Claude's sandbox; the skill clones this repo there on first use.
 
 ## Requirements
 

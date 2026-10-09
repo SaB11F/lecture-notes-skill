@@ -107,4 +107,4 @@ Deliver the PDF. If a folder is connected, write it beside the slides. Tell the 
 - `references/writing-rules.md` — pedagogy and quality bar, with before/after examples
 - `references/diagram-catalog.md` — every diagram with its syntax
 - `references/video-sources.md` — mathematics only: how to find Andrej P. Škraba's videos per section via astra.si; how familiarity sets depth
-- `examples/content.md` + `examples/output.pdf` — a complete real lecture (Matematika 1, Logika in množice, 176 slides → 29-page workbook; the source slides are not included); copy its structure for the first run on a new course
+- `examples/content.md` + `examples/output.pdf` — a complete real lecture (Matematika 1, Logika in množice, 176 slides → 33-page workbook; the source slides are not included); copy its structure for the first run on a new course
