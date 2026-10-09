@@ -1,7 +1,16 @@
 {
   "name": "lecture-notes-skill",
-  "owner": { "name": "Rene Kolednik" },
+  "owner": {
+    "name": "Rene Kolednik"
+  },
+  "metadata": {
+    "description": "Claude skill that turns lecture slides (PDF) into a print-ready study workbook: explained notes, exact definitions, diagrams and every exercise with workspace and worked solution."
+  },
   "plugins": [
-    { "name": "lecture-notes", "source": "./", "description": "Lecture slides → print-ready study workbook (notes + diagrams + solved exercises)." }
+    {
+      "name": "lecture-notes",
+      "source": "./",
+      "description": "Lecture slides → print-ready study workbook (notes + diagrams + solved exercises)."
+    }
   ]
 }

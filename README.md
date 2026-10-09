@@ -38,7 +38,52 @@ or copy `skills/lecture-notes/` to `~/.claude/skills/lecture-notes/`.
 
 **Claude.ai / Claude desktop (Cowork)** — download `lecture-notes.skill` from Releases and use *Save skill*, or paste `SKILL.md` into Settings → Skills. The scripts run in Claude's sandbox; the skill clones this repo there on first use.
 
-**Dependencies** (installed by `scripts/setup.sh`): `pdftotext` (poppler), Python 3.10+ with `markdown-it-py`, `mdit_py_plugins`, `playwright` (+ Chromium), Node.js with `katex`.
+## Requirements
+
+Install these once before the first run. `scripts/setup.sh` installs the rest (`markdown-it-py`, `mdit_py_plugins`, `playwright` + Chromium ~150 MB, `katex`) and needs internet access.
+
+| Tool | Why |
+|---|---|
+| Python 3.10+ (as `python3`) | extract and build scripts |
+| `pdftotext` (poppler) | slide text extraction |
+| Node.js + npm | KaTeX math rendering |
+| bash | runs `setup.sh` |
+
+**macOS**
+
+```bash
+brew install python poppler node
+```
+
+**Debian / Ubuntu**
+
+```bash
+sudo apt-get install -y python3 python3-pip poppler-utils nodejs npm
+```
+
+**Windows** — use Git Bash (comes with [Git for Windows](https://git-scm.com/download/win)) as the shell.
+
+```bash
+winget install Python.Python.3.12 OpenJS.NodeJS.LTS
+```
+
+```bash
+scoop install poppler
+```
+
+Without [Scoop](https://scoop.sh), download poppler from [oschwartz10612/poppler-windows](https://github.com/oschwartz10612/poppler-windows/releases) and add its `Library\bin` to `PATH`. The Python installer creates `python`, not `python3`; either replace `python3` with `python` in the commands, or create an alias in Git Bash:
+
+```bash
+echo 'alias python3=python' >> ~/.bashrc
+```
+
+Check:
+
+```bash
+python3 --version && pdftotext -v && node --version
+```
+
+**Claude.ai sandbox** — needs code execution enabled and network access allowed for pip, npm and the Chromium download; if the sandbox blocks them, use Claude Code instead.
 
 ## Use
 
