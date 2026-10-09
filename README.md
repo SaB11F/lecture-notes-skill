@@ -36,7 +36,7 @@ structure and a fixed design, so a course's notes look like one book when printe
 
 or copy `skills/lecture-notes/` to `~/.claude/skills/lecture-notes/`.
 
-**Claude.ai / Claude desktop (Cowork)** — download `lecture-notes.skill` from [the latest release](https://github.com/SaB11F/lecture-notes-skill/releases/latest/download/lecture-notes.skill) and use *Save skill*, or paste `SKILL.md` into Settings → Skills. The scripts run in Claude's sandbox; the skill clones this repo there on first use.
+**Claude.ai / Claude desktop (Cowork)** — download `lecture-notes.skill` from [the latest release](https://github.com/SaB11F/lecture-notes-skill/releases/latest/download/lecture-notes.skill) (not GitHub's *Code → Download ZIP*, which claude.ai rejects) and use *Save skill*, or paste `SKILL.md` into Settings → Skills. The scripts run in Claude's sandbox; the skill clones this repo there on first use.
 
 ## Requirements
 
